@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">My Sample Suite</th></tr><tr><td><a href="#t0">Create Portfolio Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,905</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Login Test</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num">16,402</td><td></td><td></td></tr><tr><td><a href="#t2">Delete Portfolio Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">42,774</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num attn">2</th><th class="num attn">2</th><th class="num">74,081</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">My Sample Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Create Portfolio Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.rediff.testcases.CreatePortfolioTest</td><td><a href="#m0">quit</a></td><td rowspan="1">1575260497559</td><td rowspan="1">0</td></tr><tr><th colspan="4">Create Portfolio Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.rediff.testcases.CreatePortfolioTest</td><td><a href="#m1">doLogin</a></td><td rowspan="1">1575260483310</td><td rowspan="1">14239</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Login Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.qtpselenium.rediff.testcases.LoginTest</td><td><a href="#m2">doLogin</a></td><td rowspan="2">1575260499103</td><td rowspan="2">1</td></tr><tr class="skippedeven"><td><a href="#m3">doLogin</a></td></tr><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qtpselenium.rediff.testcases.LoginTest</td><td><a href="#m4">doLogin</a></td><td rowspan="1">1575260483878</td><td rowspan="1">14357</td></tr></tbody><tbody id="t2"><tr><th colspan="4">Delete Portfolio Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qtpselenium.rediff.testcases.DeletePortfolioTest</td><td><a href="#m5">deletePortFolio</a></td><td rowspan="1">1575260483308</td><td rowspan="1">41558</td></tr></tbody></table><h2>Create Portfolio Test</h2><h3 id="m0">com.qtpselenium.rediff.testcases.CreatePortfolioTest#quit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.qtpselenium.rediff.keywords.GenericKeywords.quit(GenericKeywords.java:101)
+	at com.qtpselenium.rediff.driver.DriverScript.quit(DriverScript.java:64)
+	at com.qtpselenium.rediff.testcases.BaseTest.quit(BaseTest.java:24)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.qtpselenium.rediff.testcases.CreatePortfolioTest#doLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortFolioName=Z100, Runmode=Y, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RTOOT5Q&apos;, ip: &apos;192.168.100.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0092A903+1550595]
+	Ordinal0 [0x008AA701+1025793]
+	Ordinal0 [0x0082C58E+509326]
+	Ordinal0 [0x008262C2+484034]
+	Ordinal0 [0x00826D8D+486797]
+	Ordinal0 [0x00827B05+490245]
+	Ordinal0 [0x00823A85+473733]
+	Ordinal0 [0x0082D330+512816]
+	Ordinal0 [0x007DB649+177737]
+	Ordinal0 [0x007DA8ED+174317]
+	Ordinal0 [0x007D8CDB+167131]
+	Ordinal0 [0x007C144A+70730]
+	Ordinal0 [0x007C24D0+74960]
+	Ordinal0 [0x007C2469+74857]
+	Ordinal0 [0x008C42C7+1131207]
+	GetHandleVerifier [0x009C70FD+523789]
+	GetHandleVerifier [0x009C6E90+523168]
+	GetHandleVerifier [0x009CE1E7+552695]
+	GetHandleVerifier [0x009C78FA+525834]
+	Ordinal0 [0x008BB7FC+1095676]
+	Ordinal0 [0x008C633B+1139515]
+	Ordinal0 [0x008C64A3+1139875]
+	Ordinal0 [0x008C5425+1135653]
+	BaseThreadInitThunk [0x75EF6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77DD7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77DD7B44+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.openBrowser(GenericKeywords.java:65)
+	at com.qtpselenium.rediff.driver.DriverScript.executeTest(DriverScript.java:38)
+	at com.qtpselenium.rediff.testcases.CreatePortfolioTest.doLogin(CreatePortfolioTest.java:38)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Login Test</h2><h3 id="m2">com.qtpselenium.rediff.testcases.LoginTest#doLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=U2, ExpectedResult=Success, Password=P2, Runmode=N, Browser=Edge}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping the test as Runmode is N
+	at com.qtpselenium.rediff.testcases.LoginTest.doLogin(LoginTest.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.qtpselenium.rediff.testcases.LoginTest#doLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=U1, ExpectedResult=Success, Password=P1, Runmode=N, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping the test as Runmode is N
+	at com.qtpselenium.rediff.testcases.LoginTest.doLogin(LoginTest.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.qtpselenium.rediff.testcases.LoginTest#doLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=ashishthakur1983, ExpectedResult=Success, Password=pass@1234, Runmode=Y, Browser=Chrome}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Delete Portfolio Test</h2><h3 id="m5">com.qtpselenium.rediff.testcases.DeletePortfolioTest#deletePortFolio</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PortFolioName=Z100, Runmode=Y, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RTOOT5Q&apos;, ip: &apos;192.168.100.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\info\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 00bc819eca1d3830adcd74cd1602485c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:186)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.reportFailure(GenericKeywords.java:176)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.getObject(GenericKeywords.java:133)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.click(GenericKeywords.java:77)
+	at com.qtpselenium.rediff.keywords.AppKeywords.login(AppKeywords.java:41)
+	at com.qtpselenium.rediff.driver.DriverScript.executeTest(DriverScript.java:52)
+	at com.qtpselenium.rediff.testcases.DeletePortfolioTest.deletePortFolio(DeletePortfolioTest.java:35)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

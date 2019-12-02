@@ -1,0 +1,56 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 47.929 s <<< FAILURE! - in TestSuite
+doLogin(com.qtpselenium.rediff.testcases.CreatePortfolioTest)  Time elapsed: 13.682 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created
+from chrome not reachable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RTOOT5Q', ip: '192.168.100.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0092A903+1550595]
+	Ordinal0 [0x008AA701+1025793]
+	Ordinal0 [0x0082C58E+509326]
+	Ordinal0 [0x008262C2+484034]
+	Ordinal0 [0x00826D8D+486797]
+	Ordinal0 [0x00827B05+490245]
+	Ordinal0 [0x00823A85+473733]
+	Ordinal0 [0x0082D330+512816]
+	Ordinal0 [0x007DB649+177737]
+	Ordinal0 [0x007DA8ED+174317]
+	Ordinal0 [0x007D8CDB+167131]
+	Ordinal0 [0x007C144A+70730]
+	Ordinal0 [0x007C24D0+74960]
+	Ordinal0 [0x007C2469+74857]
+	Ordinal0 [0x008C42C7+1131207]
+	GetHandleVerifier [0x009C70FD+523789]
+	GetHandleVerifier [0x009C6E90+523168]
+	GetHandleVerifier [0x009CE1E7+552695]
+	GetHandleVerifier [0x009C78FA+525834]
+	Ordinal0 [0x008BB7FC+1095676]
+	Ordinal0 [0x008C633B+1139515]
+	Ordinal0 [0x008C64A3+1139875]
+	Ordinal0 [0x008C5425+1135653]
+	BaseThreadInitThunk [0x75EF6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77DD7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77DD7B44+180]
+
+	at com.qtpselenium.rediff.testcases.CreatePortfolioTest.doLogin(CreatePortfolioTest.java:38)
+
+quit(com.qtpselenium.rediff.testcases.CreatePortfolioTest)  Time elapsed: 13.85 s  <<< FAILURE!
+java.lang.NullPointerException
+
+deletePortFolio(com.qtpselenium.rediff.testcases.DeletePortfolioTest)  Time elapsed: 25.766 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RTOOT5Q', ip: '192.168.100.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\info\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 00bc819eca1d3830adcd74cd1602485c
+	at com.qtpselenium.rediff.testcases.DeletePortfolioTest.deletePortFolio(DeletePortfolioTest.java:35)
+

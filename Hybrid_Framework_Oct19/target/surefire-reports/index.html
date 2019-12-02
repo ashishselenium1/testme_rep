@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-My_Sample_Suite" class="navigator-link">
+              <span class="suite-name border-failed">My Sample Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-My_Sample_Suite" class="navigator-link ">
+                    <span>C:\xampp\htdocs\Hybrid_Framework_Oct19\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-My_Sample_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-My_Sample_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-My_Sample_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-My_Sample_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-My_Sample_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-My_Sample_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 2 failed,  2 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="hide-methods failed suite-My_Sample_Suite"> (hide)</a> <!-- hide-methods failed suite-My_Sample_Suite -->
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="show-methods failed suite-My_Sample_Suite"> (show)</a> <!-- show-methods failed suite-My_Sample_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-My_Sample_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_Sample_Suite" title="com.qtpselenium.rediff.testcases.DeletePortfolioTest" class="method navigator-link" hash-for-method="deletePortFolio({PortFolioName=Z100, Runmode=Y, Browser=Chrome})">deletePortFolio({PortFolioName=Z100, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_Sample_Suite" title="com.qtpselenium.rediff.testcases.CreatePortfolioTest" class="method navigator-link" hash-for-method="doLogin({PortFolioName=Z100, Runmode=Y, Browser=Chrome})">doLogin({PortFolioName=Z100, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-My_Sample_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="hide-methods skipped suite-My_Sample_Suite"> (hide)</a> <!-- hide-methods skipped suite-My_Sample_Suite -->
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="show-methods skipped suite-My_Sample_Suite"> (show)</a> <!-- show-methods skipped suite-My_Sample_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-My_Sample_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_Sample_Suite" title="com.qtpselenium.rediff.testcases.LoginTest" class="method navigator-link" hash-for-method="doLogin({Username=U2, ExpectedResult=Success, Password=P2, Runmode=N, Browser=Edge})">doLogin({Username=U2, ExpectedResult=Success, Password=P2, Runmode=N, Browser=Edge})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_Sample_Suite" title="com.qtpselenium.rediff.testcases.LoginTest" class="method navigator-link" hash-for-method="doLogin({Username=U1, ExpectedResult=Success, Password=P1, Runmode=N, Browser=Mozilla})">doLogin({Username=U1, ExpectedResult=Success, Password=P1, Runmode=N, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-My_Sample_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="hide-methods passed suite-My_Sample_Suite"> (hide)</a> <!-- hide-methods passed suite-My_Sample_Suite -->
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="show-methods passed suite-My_Sample_Suite"> (show)</a> <!-- show-methods passed suite-My_Sample_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-My_Sample_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-My_Sample_Suite" title="com.qtpselenium.rediff.testcases.LoginTest" class="method navigator-link" hash-for-method="doLogin({Username=ashishthakur1983, ExpectedResult=Success, Password=pass@1234, Runmode=Y, Browser=Chrome})">doLogin({Username=ashishthakur1983, ExpectedResult=Success, Password=pass@1234, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-My_Sample_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-My_Sample_Suite" class="panel My_Sample_Suite">
+          <div class="suite-My_Sample_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qtpselenium.rediff.testcases.CreatePortfolioTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({PortFolioName=Z100, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- doLogin({PortFolioName=Z100, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({PortFolioName=Z100, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RTOOT5Q&apos;, ip: &apos;192.168.100.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0092A903+1550595]
+	Ordinal0 [0x008AA701+1025793]
+	Ordinal0 [0x0082C58E+509326]
+	Ordinal0 [0x008262C2+484034]
+	Ordinal0 [0x00826D8D+486797]
+	Ordinal0 [0x00827B05+490245]
+	Ordinal0 [0x00823A85+473733]
+	Ordinal0 [0x0082D330+512816]
+	Ordinal0 [0x007DB649+177737]
+	Ordinal0 [0x007DA8ED+174317]
+	Ordinal0 [0x007D8CDB+167131]
+	Ordinal0 [0x007C144A+70730]
+	Ordinal0 [0x007C24D0+74960]
+	Ordinal0 [0x007C2469+74857]
+	Ordinal0 [0x008C42C7+1131207]
+	GetHandleVerifier [0x009C70FD+523789]
+	GetHandleVerifier [0x009C6E90+523168]
+	GetHandleVerifier [0x009CE1E7+552695]
+	GetHandleVerifier [0x009C78FA+525834]
+	Ordinal0 [0x008BB7FC+1095676]
+	Ordinal0 [0x008C633B+1139515]
+	Ordinal0 [0x008C64A3+1139875]
+	Ordinal0 [0x008C5425+1135653]
+	BaseThreadInitThunk [0x75EF6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77DD7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77DD7B44+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.openBrowser(GenericKeywords.java:65)
+	at com.qtpselenium.rediff.driver.DriverScript.executeTest(DriverScript.java:38)
+	at com.qtpselenium.rediff.testcases.CreatePortfolioTest.doLogin(CreatePortfolioTest.java:38)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-failed -->
+          <div class="suite-My_Sample_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qtpselenium.rediff.testcases.DeletePortfolioTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePortFolio({PortFolioName=Z100, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- deletePortFolio({PortFolioName=Z100, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">deletePortFolio</span>
+                  <span class="parameters">({PortFolioName=Z100, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RTOOT5Q&apos;, ip: &apos;192.168.100.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\info\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 00bc819eca1d3830adcd74cd1602485c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:186)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.reportFailure(GenericKeywords.java:176)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.getObject(GenericKeywords.java:133)
+	at com.qtpselenium.rediff.keywords.GenericKeywords.click(GenericKeywords.java:77)
+	at com.qtpselenium.rediff.keywords.AppKeywords.login(AppKeywords.java:41)
+	at com.qtpselenium.rediff.driver.DriverScript.executeTest(DriverScript.java:52)
+	at com.qtpselenium.rediff.testcases.DeletePortfolioTest.deletePortFolio(DeletePortfolioTest.java:35)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-failed -->
+          <div class="suite-My_Sample_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.rediff.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=U2, ExpectedResult=Success, Password=P2, Runmode=N, Browser=Edge})">
+                  </a> <!-- doLogin({Username=U2, ExpectedResult=Success, Password=P2, Runmode=N, Browser=Edge}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=U2, ExpectedResult=Success, Password=P2, Runmode=N, Browser=Edge})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test as Runmode is N
+	at com.qtpselenium.rediff.testcases.LoginTest.doLogin(LoginTest.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=U1, ExpectedResult=Success, Password=P1, Runmode=N, Browser=Mozilla})">
+                  </a> <!-- doLogin({Username=U1, ExpectedResult=Success, Password=P1, Runmode=N, Browser=Mozilla}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=U1, ExpectedResult=Success, Password=P1, Runmode=N, Browser=Mozilla})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test as Runmode is N
+	at com.qtpselenium.rediff.testcases.LoginTest.doLogin(LoginTest.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-skipped -->
+          <div class="suite-My_Sample_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qtpselenium.rediff.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=ashishthakur1983, ExpectedResult=Success, Password=pass@1234, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- doLogin({Username=ashishthakur1983, ExpectedResult=Success, Password=pass@1234, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=ashishthakur1983, ExpectedResult=Success, Password=pass@1234, Runmode=Y, Browser=Chrome})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-passed -->
+        </div> <!-- panel My_Sample_Suite -->
+        <div panel-name="test-xml-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\xampp\htdocs\Hybrid_Framework_Oct19\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;My Sample Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test name=&quot;Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.rediff.testcases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;test name=&quot;Create Portfolio Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.rediff.testcases.CreatePortfolioTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create Portfolio Test --&gt;
+  &lt;test name=&quot;Delete Portfolio Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.rediff.testcases.DeletePortfolioTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Delete Portfolio Test --&gt;
+&lt;/suite&gt; &lt;!-- My Sample Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My Sample Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create Portfolio Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Delete Portfolio Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My Sample Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My Sample Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_Sample_Suite');
+function tableData_My_Sample_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'deletePortFolio')
+data.setCell(0, 2, 'com.qtpselenium.rediff.testcases.DeletePortfolioTest')
+data.setCell(0, 3, 41558);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'doLogin')
+data.setCell(1, 2, 'com.qtpselenium.rediff.testcases.LoginTest')
+data.setCell(1, 3, 14357);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'doLogin')
+data.setCell(2, 2, 'com.qtpselenium.rediff.testcases.CreatePortfolioTest')
+data.setCell(2, 3, 14239);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'doLogin')
+data.setCell(3, 2, 'com.qtpselenium.rediff.testcases.LoginTest')
+data.setCell(3, 3, 16);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'doLogin')
+data.setCell(4, 2, 'com.qtpselenium.rediff.testcases.LoginTest')
+data.setCell(4, 3, 1);
+window.suiteTableData['My_Sample_Suite']= { tableData: data, tableDiv: 'times-div-My_Sample_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-My_Sample_Suite">
+              </div> <!-- times-div-My_Sample_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My Sample Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.DeletePortfolioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.CreatePortfolioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.DeletePortfolioTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deletePortFolio({PortFolioName=Z100, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">396 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.CreatePortfolioTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doLogin({PortFolioName=Z100, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">398 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">doLogin({Username=U1, ExpectedResult=Success, Password=P1, Runmode=N, Browser=Mozilla})</span>
+                <span class="method-start">398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">415 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">966 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin({Username=ashishthakur1983, ExpectedResult=Success, Password=pass@1234, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">966 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.CreatePortfolioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">quit</span>
+                <span class="method-start">14647 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">15323 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">16191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin({Username=U2, ExpectedResult=Success, Password=P2, Runmode=N, Browser=Edge})</span>
+                <span class="method-start">16191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">16192 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.rediff.testcases.DeletePortfolioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">41957 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
